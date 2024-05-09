@@ -2,20 +2,16 @@
  * Program to Reverse a  string without using Inbuilt functions.
  */
 
-namespace ReverseString
+namespace ReverseString;
+internal static class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        string inputString = "hello";
+        Console.WriteLine("Original string: " + inputString);
+        for (int i = inputString.Length - 1; i >= 0; i--)
         {
-            string str = "hello";
-            Console.WriteLine("Original string: " + str);
-
-            for (int i = str.Length - 1; i > 0; i--)
-            {
-                Console.Write(str[i]);
-            }
-
+            Console.Write(inputString[i]);
         }
     }
 }

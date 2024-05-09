@@ -2,30 +2,27 @@
  * Program to REVERSE the number
  */
 
-namespace NumberReverse
+namespace NumberReverse;
+
+internal static  class Program
 {
-    internal class Program
+    //Main Method
+    static void Main(string[] args)
     {
+        Console.Write("Enter The Number To Reverse:");
+        ReverseNumber(Convert.ToInt32(Console.ReadLine()));
+    }
 
-        //Main Method
-        static void Main(string[] args)
+    //Method That Reverses The Given Number
+    static void ReverseNumber(int number)
+    {
+        int reminder, sum = 0;
+        while (number != 0)
         {
-            Console.Write("Enter The Number To Reverse:");
-            reversedNumber(Convert.ToInt32(Console.ReadLine()));
+            reminder = number % 10;
+            sum = reminder + (sum * 10);
+            number = number / 10;
         }
-
-
-        //Method That Reverses The Given Number
-        static void reversedNumber(int n)
-        {
-            int reminder, s = 0;
-            while (n != 0)
-            {
-                reminder = n % 10;
-                s = reminder + (s * 10);
-                n = n / 10;
-            }
-            Console.WriteLine(s);
-        }
+        Console.WriteLine(sum);
     }
 }

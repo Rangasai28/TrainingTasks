@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightReservationSystem", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigElement", "bigElement\BigElement.csproj", "{0608ECA5-D00B-4A89-A561-2C256980ACD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sameElements", "sameElements\sameElements.csproj", "{422BCF70-0E9D-427C-A797-76C446965CDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SameElements", "sameElements\SameElements.csproj", "{422BCF70-0E9D-427C-A797-76C446965CDA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraySort", "ArraySort\ArraySort.csproj", "{754ABFFA-01CA-46B2-A1AD-AFEB292B75AB}"
 EndProject
@@ -24,8 +24,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberReverse", "NumberReverse\NumberReverse.csproj", "{62714DAA-87B8-4FCB-A260-60DDABFC2B17}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerOfNumber", "PowerOfNumber\PowerOfNumber.csproj", "{8B0E3608-2A6E-4A8F-BCD8-E1BCAAFB6264}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binary_IntegerConversion", "Binary_IntegerConversion\Binary_IntegerConversion.csproj", "{8EFBE8BA-C6FC-4708-B0AC-47C306106E8B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingTechniquies", "SortingTechniquies\SortingTechniquies.csproj", "{2E2D6283-58EB-44AD-BAC7-A967D5445F53}"
 EndProject
@@ -83,10 +81,6 @@ Global
 		{8B0E3608-2A6E-4A8F-BCD8-E1BCAAFB6264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0E3608-2A6E-4A8F-BCD8-E1BCAAFB6264}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0E3608-2A6E-4A8F-BCD8-E1BCAAFB6264}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EFBE8BA-C6FC-4708-B0AC-47C306106E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EFBE8BA-C6FC-4708-B0AC-47C306106E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EFBE8BA-C6FC-4708-B0AC-47C306106E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EFBE8BA-C6FC-4708-B0AC-47C306106E8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2E2D6283-58EB-44AD-BAC7-A967D5445F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E2D6283-58EB-44AD-BAC7-A967D5445F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2D6283-58EB-44AD-BAC7-A967D5445F53}.Release|Any CPU.ActiveCfg = Release|Any CPU

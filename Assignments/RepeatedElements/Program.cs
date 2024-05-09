@@ -2,64 +2,63 @@
  * Program to Print the elements with no of times it is repeated in the array and remove duplicate elements from an Array
  */
 
-namespace RepeatedElements
+namespace RepeatedElements;
+
+public static class Program
 {
-    class Program
+    //Main Method
+    static void Main()
     {
-        //Method That Counts Occurences of Each Integer Element  in an Integer Array
-        public static void countOfEachElement(int[] ar)
-        {
-            //Displays How Many Times Each Element is Present in The Array
-            for (int i = 0; i < ar.Length; i++)
-            {
-                int count = 1;
+        int[] array = { 1, 2, 3, 4, 5, 6, 1, 1, 2 };
 
-                if (ar[i] != 0)
+        CountOfEachElement(array);
+        Console.WriteLine();
+        RemoveDuplicates(array);
+    }
+
+    //Method That Counts Occurences of Each Integer Element  in an Integer Array
+    public static void CountOfEachElement(int[] array)
+    {
+        //Displays How Many Times Each Element is Present in The Array
+        for (int i = 0; i < array.Length; i++)
+        {
+            int count = 1;
+
+            if (array[i] != 0)
+            {
+                for (int j = i + 1; j < array.Length; j++)
                 {
-                    for (int j = i + 1; j < ar.Length; j++)
+                    if (array[i] == array[j])
                     {
-                        if (ar[i] == ar[j])
-                        {
-                            count++;
-                            ar[j] = 0;
-                        }
+                        count++;
+                        array[j] = 0;
                     }
-                    Console.WriteLine($"Element {ar[i]} : Count {count}");
                 }
+                Console.WriteLine($"Element {array[i]} : Count {count}");
             }
-        }
-
-        //Method that Removes the Duplicate Elements in An Integer Array
-        static void removeDuplicates(int[] ar)
-        {
-            List<int> list = new List<int>();
-
-            //Adding Elements into the List that are not repeated
-            for (int i = 0; i < ar.Length; i++)
-            {
-                if (!list.Contains(ar[i]))
-                {
-                    list.Add(ar[i]);
-                }
-            }
-
-            //Displaying the Array after removing the Duplicate Elements
-            Console.WriteLine("Array after removing Duplicate Elements ");
-            for (int i = 0; i < list.Count - 1; i++)
-            {
-                Console.Write(ar[i] + " ");
-            }
-            Console.WriteLine();
-        }
-
-        //Main Method
-        static void Main()
-        {
-            int[] ar = { 1, 2, 3, 4, 5, 6, 1, 1, 2 };
-
-            countOfEachElement(ar);
-            removeDuplicates(ar);
         }
     }
 
+    //Method that Removes the Duplicate Elements in An Integer Array
+    static void RemoveDuplicates(int[] array)
+    {
+        List<int> list = new List<int>();
+
+        //Adding Elements into the List that are not repeated
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (!list.Contains(array[i]))
+            {
+                list.Add(array[i]);
+            }
+        }
+
+        //Displaying the Array after removing the Duplicate Elements
+        Console.WriteLine("Array after removing Duplicate Elements ");
+        for (int i = 0; i < list.Count - 1; i++)
+        {
+            Console.Write(array[i] + " ");
+        }
+        Console.WriteLine();
+    }
 }
