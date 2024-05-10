@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternPrinting", "PatternP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SequenceOfLetters", "SequenceOfLetters\SequenceOfLetters.csproj", "{A1A7A440-B5DC-40AF-AA08-3433223E50ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{266DAC50-3692-4C8F-A49F-DA9FD2120E47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{266DAC50-3692-4C8F-A49F-DA9FD2120E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtentionMethods", "ExtentionMethods\ExtentionMethods.csproj", "{26B941F7-A1FF-4BCE-9F28-5CED580B98C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{266DAC50-3692-4C8F-A49F-DA9FD2120E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{266DAC50-3692-4C8F-A49F-DA9FD2120E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{266DAC50-3692-4C8F-A49F-DA9FD2120E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B941F7-A1FF-4BCE-9F28-5CED580B98C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B941F7-A1FF-4BCE-9F28-5CED580B98C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B941F7-A1FF-4BCE-9F28-5CED580B98C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B941F7-A1FF-4BCE-9F28-5CED580B98C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
