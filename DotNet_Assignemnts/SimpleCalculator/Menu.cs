@@ -21,19 +21,19 @@ public  class Menu
             {
                 case MenuOption.Addition:
                     calculations.Addition();
-                    Continue(userOption);
+                    ContinueOperation(userOption);
                     break;
                 case MenuOption.Subtraction:
                     calculations.Subtraction();
-                    Continue(userOption);
+                    ContinueOperation(userOption);
                     break;
                 case MenuOption.Multiplication:
                     calculations.Multiplication();
-                    Continue(userOption);
+                    ContinueOperation(userOption);
                     break;
                 case MenuOption.Division:
                     calculations.Division();
-                    Continue(userOption);
+                    ContinueOperation(userOption);
                     break;
                 case MenuOption.Exit:
                     break;
@@ -67,7 +67,7 @@ public  class Menu
         return (MenuOption)userOption;
     }
 
-    public static void Continue(MenuOption option)
+    public static void ContinueOperation(MenuOption option)
     {
         Console.WriteLine("Would you Like to continue same Operation Y/N :");
         char c = Convert.ToChar(Console.ReadLine());
