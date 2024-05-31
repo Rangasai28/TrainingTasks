@@ -1,0 +1,6 @@
+@StudentWebApiEF_HostAddress = http://localhost:5098
+
+GET {{StudentWebApiEF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

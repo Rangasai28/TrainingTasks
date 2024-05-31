@@ -1,0 +1,6 @@
+@StudentWebAPiADO_HostAddress = http://localhost:5171
+
+GET {{StudentWebAPiADO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
