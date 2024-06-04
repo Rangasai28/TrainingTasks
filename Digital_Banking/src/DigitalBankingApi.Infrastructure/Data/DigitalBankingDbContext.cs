@@ -15,4 +15,6 @@ public class DigitalBankingDbContext:DbContext
     public DbSet<Account> Accounts { get; set; }
 
     public DbSet<Branch> Branches { get; set; }
+
+    public DbSet<Role> Roles { get; set; }
 }

@@ -16,8 +16,10 @@ public  class Bank
     public string ContactNumber { get; set; } = null!;  
     public string WebsiteUrl { get; set; } = null!;
 
-    public DateTime CreatedDate { get; set; }
+    public string Address { get; set; } = null!;
 
-    public DateTime UpdatedDate { get; set;}
+    public DateTime CreatedDate { get; set; } = DateTime.Now;
+
+    public DateTime? UpdatedDate { get; set;}
 
 }

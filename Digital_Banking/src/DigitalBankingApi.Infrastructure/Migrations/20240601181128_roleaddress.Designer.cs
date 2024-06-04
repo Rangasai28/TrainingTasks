@@ -4,6 +4,7 @@ using DigitalBankingApi.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigitalBankingApi.Infrastructure.Migrations
 {
     [DbContext(typeof(DigitalBankingDbContext))]
-    partial class DigitalBankingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240601181128_roleaddress")]
+    partial class roleaddress
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -182,9 +185,8 @@ namespace DigitalBankingApi.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(1)");
 
-                    b.Property<string>("IdProof")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("IdProof")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");

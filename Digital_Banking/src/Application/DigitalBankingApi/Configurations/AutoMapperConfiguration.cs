@@ -10,7 +10,8 @@ public class AutoMapperConfiguration
         var mapper = new MapperConfiguration(cnfg =>
         {
             cnfg.CreateMap<RegistrationVm, Customer>();
-           // cnfg.CreateMap<StudentDtoPut, Student>();
+            cnfg.CreateMap<BankVm, Bank>();
+            cnfg.CreateMap<BranchVm, Branch>();
         });
 
         return mapper.CreateMapper();

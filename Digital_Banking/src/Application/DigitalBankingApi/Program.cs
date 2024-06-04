@@ -29,6 +29,10 @@ builder.Configuration.GetConnectionString("cs")));
         builder.Services.AddSingleton(mapper);
         builder.Services.AddScoped<IBankRepository, BankRepository>();
         builder.Services.AddScoped<IBankService, BankService>();
+        builder.Services.AddScoped<IBranchService, BranchService>();
+        builder.Services.AddScoped<IBranchRepository, BranchRepository>();
+        builder.Services.AddScoped<IAccountService, AccountService>();
+        builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
         var app = builder.Build();
 

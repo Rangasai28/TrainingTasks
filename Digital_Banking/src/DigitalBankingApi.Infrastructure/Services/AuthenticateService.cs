@@ -41,7 +41,7 @@ public  class AuthenticateService:IAuthenticateService
             Subject = new ClaimsIdentity(new Claim[]
             {
                     new Claim(ClaimTypes.Email, user.Email),
-                   // new Claim(ClaimTypes.Role, person.Role)
+                    //new Claim(ClaimTypes.Role, user.Role)
             }),
             Expires = DateTime.UtcNow.AddMinutes(30),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
