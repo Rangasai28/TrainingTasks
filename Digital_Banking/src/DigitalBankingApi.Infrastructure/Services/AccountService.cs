@@ -35,4 +35,25 @@ public class AccountService : IAccountService
 
         return accountNumber;
     }
+
+
+    async Task<IEnumerable<AccountDisplayDto>> IAccountService.GetAccountDetails()
+    {
+        return await _accountRepository.GetAccountDetails();
+    }
+
+    public async Task<AccountDisplayDto> GetAccountDetailsById(int id)
+    {
+        return await _accountRepository.GetAccountDetailsById(id);
+    }
+
+    public async Task<AccountDisplayDto> GetAccountDetailsByName(string name)
+    {
+        return await _accountRepository.GetAccountDetailsByName(name);
+    }
+
+    public async Task<bool> DeActivateAccount(int customerId)
+    {
+       return await _accountRepository.DeActivateAccount(customerId);
+    }
 }

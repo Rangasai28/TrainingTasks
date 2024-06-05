@@ -70,7 +70,7 @@ public class BankController : ControllerBase
     }
 
     [HttpDelete("harddelete")]
-    public async Task<ActionResult> HardDeleteEmployee(int id)
+    public async Task<ActionResult> HardDeleteBank(int id)
     {
         if (await _bankService.HardDeleteBank(id))
         {
